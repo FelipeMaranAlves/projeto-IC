@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tudo {
+    min-height: 100vh;
+}
+
+header {
+    background-color: #e0ac62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+header ul {
+    padding-left: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    justify-items: center;
+}
+
+header img {
+    max-width: 20%;
+}
+
+.banana {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.dentro {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 12%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5%;
+    gap: 16px;
+    background-color: #2f3732;
+    font-size: 16px;
+}
+
+.icones_contatos {
+    list-style: none;
+    text-decoration: none;
+}
+
+.icones_contatos img {
+    max-height: 15vh;
+}
+
+.conteudo {
+    width: 100vw;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/fundo.png);
+    background-repeat: repeat-y;
+    background-size: 100vw;
+    text-align: justify;
+}
+
+.conteudo img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+footer {
+    height: 5vh;
+    background-color: #e0ac62;
+}
+
+footer ul {
+    padding-left: 50px;
+    list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        padding-left: 5%;
+    }
+
+    .dentro {
+        margin: 5% 5%;
+        font-size: 14px;
+    }
+
+    .conteudo {
+        min-height: auto;
+    }
+}
+html, body {
+    height: 100%;
+}
+
+.tudo {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    flex-grow: 1;
+}
